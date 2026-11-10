@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jelajah Pantai | Kontak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">☀ Jelajah<span>Pantai</span></a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="destinasi.html">Destinasi</a>
+      <a class="active" href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <p class="eyebrow">KAMI SIAP MENDENGAR</p>
+      <h1>Hubungi Kami</h1>
+      <p>Punya saran atau ingin berbagi cerita perjalanan? Kirim pesan melalui formulir berikut.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-info">
+        <h2>Mari terhubung!</h2>
+        <p>Kami senang menerima pertanyaan, masukan, maupun cerita tentang pantai favoritmu.</p>
+        <p>📧 hello@jelajahpantai.example</p>
+        <p>📍 Indonesia</p>
+        <p>🕘 Senin–Jumat, 09.00–17.00</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="nama@email.com" required>
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" rows="5" placeholder="Tuliskan pesan kamu..." required></textarea>
+        <button class="btn" type="submit">Kirim Pesan</button>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Jelajah Pantai · Dibuat untuk latihan membuat website</footer>
+  <script src="script.js"></script>
+</body>
+</html>

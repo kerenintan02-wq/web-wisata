@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+:root { --blue:#087eaa; --deep:#07516f; --sky:#e9f8fc; --coral:#ff9878; --ink:#173b4b; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Nunito',sans-serif; color:var(--ink); background:#fff; line-height:1.7; }
+.header { min-height:76px; padding:14px 8%; display:flex; align-items:center; justify-content:space-between; gap:20px; background:#fff; position:sticky; top:0; z-index:10; box-shadow:0 3px 18px #16465b12; }
+.logo { color:var(--deep); font-size:1.35rem; font-weight:900; text-decoration:none; }
+.logo span { color:var(--coral); }
+nav { display:flex; gap:26px; flex-wrap:wrap; }
+nav a { color:#46616c; text-decoration:none; font-weight:800; }
+nav a:hover, nav a.active { color:var(--blue); }
+.hero { min-height:570px; display:flex; align-items:center; padding:70px 9%; color:white; background:linear-gradient(90deg,rgba(3,48,68,.78),rgba(3,48,68,.12)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=90') center/cover; }
+.hero-content { max-width:600px; }
+.eyebrow { color:var(--coral); font-weight:900; letter-spacing:2px; font-size:.78rem; }
+.hero h1 { font-size:clamp(2.5rem,6vw,4.5rem); line-height:1.12; margin:15px 0; }
+.hero h1 span { color:#a9efff; }
+.intro { max-width:520px; font-size:1.05rem; margin-bottom:28px; color:#f1fbff; }
+.btn { display:inline-block; border:0; border-radius:30px; padding:12px 25px; background:var(--coral); color:#173b4b; text-decoration:none; font:800 1rem 'Nunito',sans-serif; cursor:pointer; transition:.2s; }
+.btn:hover { transform:translateY(-2px); background:#ffb098; }
+.section { padding:75px 8%; text-align:center; }
+.section h2 { font-size:clamp(1.7rem,4vw,2.4rem); color:var(--deep); margin:8px 0 12px; }
+.section-desc { max-width:680px; margin:0 auto; color:#607985; }
+.feature-grid, .destination-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:38px; text-align:left; }
+.feature { padding:28px; border-radius:18px; background:var(--sky); }
+.feature-icon { font-size:2rem; }
+.feature h3 { margin:10px 0 5px; color:var(--deep); }
+.feature p, .destination-card p { color:#617984; }
+.page-banner { text-align:center; padding:70px 8%; background:linear-gradient(135deg,#e9f8fc,#fff2ed); }
+.page-banner h1 { color:var(--deep); font-size:clamp(2.2rem,5vw,3.4rem); margin:5px 0; }
+.page-banner p:last-child { color:#607985; }
+.destination-card { overflow:hidden; border-radius:18px; background:#fff; box-shadow:0 8px 28px #174b6017; }
+.destination-card img { display:block; width:100%; height:220px; object-fit:cover; }
+.card-body { padding:22px; }
+.card-body h2 { font-size:1.35rem; margin:8px 0; }
+.tag { color:var(--blue); font-size:.78rem; font-weight:900; text-transform:uppercase; letter-spacing:1px; }
+.note { margin-top:25px; color:#7a9099; font-size:.9rem; }
+.contact-layout { display:grid; grid-template-columns:1fr 1.2fr; gap:45px; text-align:left; align-items:start; max-width:1050px; margin:auto; }
+.contact-info h2 { margin-top:0; }
+.contact-info p { margin:14px 0; color:#607985; }
+.contact-form { display:flex; flex-direction:column; gap:9px; padding:28px; background:var(--sky); border-radius:18px; }
+.contact-form label { font-weight:800; color:var(--deep); }
+.contact-form input, .contact-form textarea { width:100%; border:1px solid #c8e1e9; border-radius:10px; padding:12px 14px; font:inherit; background:white; outline:none; }
+.contact-form input:focus, .contact-form textarea:focus { border-color:var(--blue); }
+.contact-form .btn { align-self:flex-start; margin-top:8px; }
+.feedback { color:var(--deep); font-weight:800; min-height:24px; }
+footer { padding:22px; text-align:center; color:#6e8791; background:#f4fbfd; font-size:.9rem; }
+@media (max-width:760px) {
+  .header { padding:14px 5%; flex-direction:column; }
+  nav { justify-content:center; gap:18px; }
+  .hero { min-height:520px; padding:55px 7%; }
+  .feature-grid, .destination-grid, .contact-layout { grid-template-columns:1fr; }
+  .section { padding:55px 6%; }
+}
